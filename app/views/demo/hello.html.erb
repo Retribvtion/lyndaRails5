@@ -1,0 +1,15 @@
+<h1>Hello from hello view</h1>
+
+<% @array.each do |n| %>
+  <%= n %><br />
+  <% end %>
+
+<br />
+
+<%= link_to('index page', action: 'index') %>
+
+<br />
+
+ID: <%= @id %><br />
+ID <%= params[:id] %><br />
+Page: <%= @page.to_i + 1 %><br />
