@@ -5,12 +5,11 @@ class CreatePages < ActiveRecord::Migration[5.0]
       t.string 'name'
       t.string 'permalink'
       t.integer 'position'
-      t.boolean 'visible', default: false
-
+      t.boolean 'visible'
       t.timestamps
     end
     add_index("pages", 'subject_id')
     add_index('pages', 'permalink')
   end
-  
+
 end
