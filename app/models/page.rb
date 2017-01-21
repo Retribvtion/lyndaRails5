@@ -7,6 +7,6 @@ class Page < ApplicationRecord
   scope :visible, lambda { where(visible: true) }
   scope :invisible, lambda { where(visible: false) }
   scope :sorted, lambda { order("position ASC") }
-  scope :newest, -> { order("created_at DESC") }
+  scope :newest_first, -> { order("created_at DESC") }
 
 end

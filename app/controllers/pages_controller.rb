@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @page = Pages.sorted
+    @page = Page.sorted
   end
 
   def show

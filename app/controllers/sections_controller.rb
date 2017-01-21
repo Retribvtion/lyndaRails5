@@ -1,7 +1,7 @@
 class SectionsController < ApplicationController
 
   def index
-    @section = Section.sorted
+    @section = Section.all
   end
 
   def show
